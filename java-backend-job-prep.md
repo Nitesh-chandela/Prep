@@ -1,7 +1,7 @@
 
 # 🧠 Java Backend Developer – Complete Job Preparation (3 Yrs Experience)
 
-This repository is a complete job switch prep guide for backend developers with 3 years of experience. It includes Java core, Spring Boot, REST APIs, Security, and more — all organized for interviews and real-world project readiness.
+This repository is a comprehensive preparation guide for Java backend developers with around 3 years of experience. It is designed to help with job switches and includes conceptual overviews, interview questions, code examples, and project ideas.
 
 ---
 
@@ -9,30 +9,17 @@ This repository is a complete job switch prep guide for backend developers with 
 
 ### ✅ Java 8+ Features
 - Lambda Expressions
-- Functional Interfaces
-- Stream API
-- Optional API
-- Date and Time API
+- Functional Interfaces: `Predicate`, `Function`, `Consumer`, `Supplier`
+- Stream API: `map`, `filter`, `collect`, `flatMap`
+- Optional: avoid null pointer exceptions
+- Date and Time API: `LocalDate`, `LocalDateTime`
 
-### ✅ OOP
-- Abstraction, Encapsulation, Inheritance, Polymorphism
-- Abstract classes vs Interfaces
-- Overloading vs Overriding
-
-### ✅ Collections
-- List, Set, Map types
-- HashMap internal working
-- Comparable vs Comparator
-
-### ✅ Exceptions
-- Checked vs Unchecked
-- Custom exceptions
-
-### ✅ Concurrency
-- Threads, Runnable
-- ExecutorService
-- Callable, Future
-- Atomic types
+### 📌 Interview Questions
+- What are functional interfaces? Give examples.
+- How does `Optional` help avoid NullPointerException?
+- What is the difference between `map()` and `flatMap()` in streams?
+- How is `LocalDate` better than `Date`?
+- How do streams handle parallel processing?
 
 ---
 
@@ -40,22 +27,35 @@ This repository is a complete job switch prep guide for backend developers with 
 
 ### ✅ Key Concepts
 - Auto Configuration
-- Spring Boot annotations
-- application.yml/properties
-- Profiles
-- Testing with `@SpringBootTest`
+- `@SpringBootApplication`, `@Component`, `@Service`, `@Repository`
+- Profiles for environment separation
+- Spring Boot Starter dependencies
+- DevTools and Actuator for monitoring
+
+### 📌 Interview Questions
+- What is Spring Boot Auto Configuration?
+- How does Spring Boot reduce boilerplate code?
+- Explain the purpose of `@SpringBootApplication`.
+- How do you create and use different profiles in Spring Boot?
+- What is the use of Spring Boot Actuator?
 
 ---
 
 ## 🔹 Section 3: JPA & Hibernate
 
 ### ✅ Core Concepts
-- `@Entity`, `@Id`, `@GeneratedValue`
-- Relationships
+- ORM: `@Entity`, `@Id`, `@GeneratedValue`
+- Relationships: OneToOne, OneToMany, ManyToOne
+- JPQL vs Native Queries
 - Lazy vs Eager Loading
-- JPQL, Native Queries
-- Repositories and `@Query`
-- Pagination, Sorting
+- Spring Data JPA
+
+### 📌 Interview Questions
+- What is the difference between `fetch = LAZY` and `EAGER`?
+- How do you define relationships in JPA?
+- How does Hibernate manage sessions and transactions?
+- What is the N+1 problem in Hibernate?
+- How do you use pagination and sorting in Spring Data JPA?
 
 ---
 
@@ -63,27 +63,40 @@ This repository is a complete job switch prep guide for backend developers with 
 
 ### ✅ Concepts
 - REST Principles
-- HTTP Methods & Status Codes
-- Validation with `@Valid`
-- Exception Handling
-- Postman Tests
+- HTTP Methods: GET, POST, PUT, DELETE
+- Status Codes
+- Exception Handling: `@ControllerAdvice`, `@ExceptionHandler`
+- Validation: `@Valid`, `@NotNull`
+
+### 📌 Interview Questions
+- What is the difference between PUT and PATCH?
+- What are idempotent methods in REST?
+- How do you handle exceptions in Spring Boot REST APIs?
+- How do you test APIs with Postman?
+- What are the standard HTTP status codes and their meanings?
 
 ---
 
 ## 🔹 Section 5: Build Tools, Docker, Git
 
-### ✅ Maven
-- pom.xml, lifecycle
-- Multi-module setup
+### ✅ Maven & Gradle
+- Dependency Management
+- Build Lifecycle
 
 ### ✅ Git
-- Branching, Merging, PR
-- .gitignore
+- Commit, Branch, Merge
+- Pull Requests, .gitignore
 
 ### ✅ Docker
 - Dockerfile
-- Compose
-- Common Commands
+- Docker Compose
+
+### 📌 Interview Questions
+- What are the phases of Maven build lifecycle?
+- How do you create and merge a feature branch in Git?
+- What is a Dockerfile? How do you dockerize a Spring Boot app?
+- What is the difference between Docker and Docker Compose?
+- How do you handle version control for a team project?
 
 ---
 
@@ -91,11 +104,17 @@ This repository is a complete job switch prep guide for backend developers with 
 
 ### ✅ Topics
 - Monolith vs Microservices
-- Load Balancer, Gateway
-- DB Scaling, Indexing
-- Caching
+- Load Balancer, API Gateway
+- Caching (Redis)
 - CAP Theorem
-- Design Problems
+- DB Indexing
+
+### 📌 Interview Questions
+- How do you design a scalable URL shortener?
+- What is the role of API Gateway in microservices?
+- What is eventual consistency and where is it used?
+- What is the difference between horizontal and vertical scaling?
+- Explain the CAP theorem with examples.
 
 ---
 
@@ -103,21 +122,32 @@ This repository is a complete job switch prep guide for backend developers with 
 
 ### ✅ Security
 - Authentication vs Authorization
-- JWT
-- Role-based Access
-- OAuth2 Login
+- JWT Tokens
+- Spring Security Config
+
+### 📌 Interview Questions
+- What is the difference between Authentication and Authorization?
+- What is JWT and how does it work?
+- How do you secure REST endpoints using Spring Security?
+- What is OAuth2 and how does the authorization code flow work?
+- How do you implement role-based access control?
 
 ---
 
 ## 🔹 Section 8: Microservices Architecture
 
 ### ✅ Concepts
-- Service Discovery
-- API Gateway
-- Config Server
-- Resilience4j / Hystrix
-- Kafka, RabbitMQ
-- OpenFeign
+- Service Discovery: Eureka
+- API Gateway: Spring Cloud Gateway
+- Inter-service Communication: Feign, WebClient
+- Resilience: Resilience4j, Circuit Breaker
+
+### 📌 Interview Questions
+- How do microservices communicate?
+- What happens when one service fails?
+- What is the role of a Config Server?
+- How do you implement service discovery?
+- What are the benefits and challenges of microservices?
 
 ---
 
